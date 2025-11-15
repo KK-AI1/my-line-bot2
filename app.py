@@ -10,7 +10,7 @@ app = Flask(__name__)
 # --- Gemini API の設定 ---
 # Vercelの環境変数からAPIキーを取得
 CHATGPT_API_KEY = os.getenv("CHATGPT_API_KEY")
-genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key=CHATGPT_API_KEY)
 
 # --- LINE Bot の設定 ---
 # Vercelの環境変数からアクセストークンとチャネルシークレットを取得
